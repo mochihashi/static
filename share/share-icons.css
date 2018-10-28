@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('icomoon.eot?ookgoz');
+	src:url('icomoon.eot?ookgoz#iefix') format('embedded-opentype'),
+		url('icomoon.ttf?ookgoz') format('truetype'),
+		url('icomoon.woff?ookgoz') format('woff'),
+		url('icomoon.svg?ookgoz#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+
+.share-icons {
+	list-style:none;
+	display: flex;
+	flex-wrap:wrap;
+	width:100%;
+	margin:-5px 0 0 -5px;
+	padding:0;
+}
+.share-icons li {
+	height:24px;
+	line-height:24px;
+	width:24px;
+	margin:2px 0 0 2px;
+	text-align:center;
+}
+.share-icons li a {
+	display:block;
+	color:#ffffff;
+	text-decoration: none;
+	border-radius: 3px;
+}
+.share-icons li a.icomoon {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: inherit;
+	
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.share-icons li a::before{
+	font-size:16px;
+	display:block;
+	transition: ease-in-out .2s;
+	border-radius: 3px;
+}
+.share-icons li a:hover::before{
+	background:#ffffff;
+	transform: scale(1.2);
+	box-shadow:1px 1px 4px 0px rgba(0,0,0,0.15);
+}
+ 
+.share-icons .icon-twitter{background:#55acee;}
+.share-icons .icon-twitter:hover::before{color:#55acee;}
+.share-icons .icon-twitter:before     {content: "\ea96";}
+
+.share-icons .icon-facebook{background:#3B5998;}
+.share-icons .icon-facebook:hover::before{color:#3B5998;}
+.share-icons .icon-facebook:before    {content: "\ea90";}
+
+.share-icons .icon-hatebu{background:#008FDE;}
+.share-icons .icon-hatebu:hover::before{color:#008FDE;}
+.share-icons .icon-hatebu:before      {content: "\e903";}
+
+.share-icons .icon-pocket{background:#EB4654;}
+.share-icons .icon-pocket:hover::before{color:#EB4654;}
+.share-icons .icon-pocket:before      {content: "\e902";}
+
+.share-icons .icon-rss{background:#ff9900;}
+.share-icons .icon-rss:hover::before{color:#ff9900;}
+.share-icons .icon-rss:before         {content: "\ea9b";}
+
+.share-icons .icon-feedly{background:#6cc655;}
+.share-icons .icon-feedly:hover::before{color:#6cc655;}
+.share-icons .icon-feedly:before      {content: "\e900";}
+
+.share-icons .icon-pinterest{background:#cb2027;}
+.share-icons .icon-pinterest:hover::before{color:#cb2027;}
+.share-icons .icon-pinterest:before   {content: "\ead2";}
+
+.share-icons .icon-linkedin{background:#0e76a8;}
+.share-icons .icon-linkedin:hover::before{color:#0e76a8;}
+.share-icons .icon-linkedin:before    {content: "\eaca";}
+
+.share-icons .icon-line{background:#1dcd00;}
+.share-icons .icon-line:hover::before{color:#1dcd00;}
+.share-icons .icon-line:before        {content: "\e90a";}
