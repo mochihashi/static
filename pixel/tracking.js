@@ -6,9 +6,11 @@ function includeScript(url, async) {
 	d.parentNode.insertBefore(s, d);
 }
 
-// Global site tag (gtag.js) - Google Analytics
-includeScript("https://www.googletagmanager.com/gtag/js?id=UA-55916419-2", true);
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-55916419-2');
+if(location.hostname != '127.0.0.1' && location.hostname != 'localhost') {
+	// Global site tag (gtag.js) - Google Analytics
+	includeScript("https://www.googletagmanager.com/gtag/js?id=UA-55916419-2", true);
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-55916419-2');
+}
